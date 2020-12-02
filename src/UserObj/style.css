@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.girlFind{
+    background-color: #ab15d0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+.boy{
+    background-color: #baa5a5;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}

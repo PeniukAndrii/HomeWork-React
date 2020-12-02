@@ -1,0 +1,1 @@
+export let prince= [{name:'Andrii',age:19,footSizeFind:37}]
