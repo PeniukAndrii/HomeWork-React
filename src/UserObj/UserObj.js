@@ -1,13 +1,26 @@
 import React, {Component} from 'react';
 import './style.css'
+import {girl} from '../database/girl'
+import {prince} from "../database/prince";
 
 class UserObj extends Component {
     render() {
-        let {item, items}=this.props
+        let {classN}=this.props
+        console.log(classN)
         return (
             <div>
-                <div className={this.props.classN}>Name-{item.name} Age-{item.age} FootSize-{item.footSize}</div>
-                <div className='boy'>Name-{items.name} Age-{items.age} FootSizeFind-{items.footSizeFind}</div>
+                {
+                    girl.map(i =>{
+                        if(i.footSize===prince[0].footSizeFind){
+                            return(
+                                <div>
+                                    <div className={classN}>Name-{i.name} Age-{i.age} FootSize-{i.footSize}</div>
+                                    <div className='boy'>Name-{prince[0].name} Age-{prince[0].age} FootSizeFind-{prince[0].footSizeFind}</div>
+                                </div>
+                            )
+                        }
+                    })
+                }
             </div>
         );
     }

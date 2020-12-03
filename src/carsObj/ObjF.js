@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
 import './car.css'
+import {cars} from '../dataCars/cars'
 
 class ObjF extends Component {
     render() {
-        let {item}=this.props
         return (
             <div>
-                <div className={'cars'}>{item.producer}, {item.model}, {item.year}, {item.color}, {item.type}, {item.engine}, {item.volume}, {item.power}</div>
+                {
+                    cars.map(value=>{
+                        return(
+                          <div className={'cars'}>
+                              {value.producer}, {value.model}, {value.year}, {value.color}, {value.type}, {value.engine}, {value.volume}, {value.power}
+                          </div>)
+                    })
+                }
             </div>
-        );
+        )
     }
 }
 
