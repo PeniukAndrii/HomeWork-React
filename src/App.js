@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import UserObj from "./UserObj/UserObj";
 import ObjF from "./carsObj/ObjF";
+import HouseObj from "./HouseObj/HouseObj";
+
+
 
 class App extends Component {
   render() {
@@ -11,6 +14,9 @@ class App extends Component {
             }
             {
                 <ObjF/>
+            }
+            {
+                <HouseObj/>
             }
         </div>
     );

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './car.css'
-import {cars} from '../dataCars/cars'
+import '../database/style.css'
+import {cars} from '../database/cars'
 
 class ObjF extends Component {
     render() {
@@ -9,7 +9,7 @@ class ObjF extends Component {
                 {
                     cars.map(value=>{
                         return(
-                          <div className={'cars'}>
+                          <div className={'cars def'}>
                               {value.producer}, {value.model}, {value.year}, {value.color}, {value.type}, {value.engine}, {value.volume}, {value.power}
                           </div>)
                     })

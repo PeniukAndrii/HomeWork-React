@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.def{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1e2e2;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.cars{
+    background-color: #000000;
+}
+.girlFind{
+    background-color: #d223be;
+}
+.house{
+    background-color: #1cb7be;
+}
+.boy{
+     background-color: #1d2d8d;
+ }
