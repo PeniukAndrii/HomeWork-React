@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {house} from "../database/House";
-import '../database/style.css'
+import {db} from "../../database/db";
+import '../../Style/style.css'
 
-class HouseObj extends Component {
+class House extends Component {
     render() {
         return (
             <div>
                 {
-                    house.map(value => {
+                    db.house.map(value => {
                         return(<div className={'house def'}>Position-{value.position}, Price-{value.price}, Area-{value.area}</div>)
                     })
                 }
@@ -16,4 +16,4 @@ class HouseObj extends Component {
     }
 }
 
-export default HouseObj;
+export default House;

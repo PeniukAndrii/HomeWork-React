@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import '../database/style.css'
-import {cars} from '../database/cars'
+import '../../Style/style.css'
+import {db} from '../../database/db'
 
-class ObjF extends Component {
+class Car extends Component {
     render() {
+
         return (
             <div>
                 {
-                    cars.map(value=>{
+                    db.cars.map(value=>{
                         return(
                           <div className={'cars def'}>
                               {value.producer}, {value.model}, {value.year}, {value.color}, {value.type}, {value.engine}, {value.volume}, {value.power}
@@ -19,4 +20,4 @@ class ObjF extends Component {
     }
 }
 
-export default ObjF;
+export default Car;

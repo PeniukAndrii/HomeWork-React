@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import UserObj from "./UserObj/UserObj";
-import ObjF from "./carsObj/ObjF";
-import HouseObj from "./HouseObj/HouseObj";
+import User from "./Components/users/User";
+import Car from "./Components/Cars/car";
+import House from "./Components/house/House";
 
 
 
@@ -10,13 +10,13 @@ class App extends Component {
     return (
         <div>
             {
-                <UserObj classN={'girlFind'}/>
+                <User classN={'girlFind'} />
             }
             {
-                <ObjF/>
+                <Car />
             }
             {
-                <HouseObj/>
+                <House />
             }
         </div>
     );
